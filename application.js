@@ -42,14 +42,18 @@ function initMap() {
       var infowindow = new google.maps.InfoWindow({
       content: contentString
       });
+
       createMarkers(locations.name);
+
       createContextWindows(markers[i], infowindow, contentString);
+
       function createMarkers (name) {
           markers.push(new google.maps.Marker({
             position: {lat: locations[i].s, lng: locations[i].e},
             map: map,
             icon: image,
-            title: name
+            title: name,
+            animation: google.maps.Animation.DROP
           }));
       }
       function createContextWindows (marker, infowindow, html) {
