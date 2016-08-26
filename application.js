@@ -11,7 +11,7 @@ var image = 'Images/icon.png';
 var markers = [];
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 15,
+    zoom: 13,
     center: {lat: -37.8116238, lng: 144.9629808},
     styles: [
       {
@@ -34,7 +34,22 @@ function initMap() {
 
   var image = 'Images/icon.png';
   var markers = [];
-  for (var i = 0; i < locations.length; i++) {
+
+  setTimeout(function(){
+  	drop();
+  },500);
+  setTimeout(function () {
+    finalContext();
+  }, 2000);
+
+  function createContextWindows (marker, infowindow, html) {
+    google.maps.event.addListener(marker, 'click', function(){
+      infowindow.setContent(html);
+      infowindow.open(map, marker);
+    });
+  }
+  function finalContext () {
+    for (var i = 0; i < locations.length; i++) {
       var contentString = '<div id="content">' +
       '<div id="siteNotice"></div>' + locations[i].name + '</h1>' +
       '<p><b>' + locations[i].name + '</b></p><p>' + locations[i].discription + " " + locations[i].rating + '/10</p><img src="Images/Melbourne.jpg"/>' +
@@ -42,25 +57,24 @@ function initMap() {
       var infowindow = new google.maps.InfoWindow({
       content: contentString
       });
-
-      createMarkers(locations.name);
-
       createContextWindows(markers[i], infowindow, contentString);
-
-      function createMarkers (name) {
-          markers.push(new google.maps.Marker({
-            position: {lat: locations[i].s, lng: locations[i].e},
-            map: map,
-            icon: image,
-            title: name,
-            animation: google.maps.Animation.DROP
-          }));
-      }
-      function createContextWindows (marker, infowindow, html) {
-        google.maps.event.addListener(marker, 'click', function(){
-          infowindow.setContent(html);
-          infowindow.open(map, marker);
-        });
+    }
+  }
+  function createMarkers (name, timeout,position) {
+    window.setTimeout(function() {
+      markers.push(new google.maps.Marker({
+        position: position,
+        map: map,
+        icon: image,
+        title: name,
+        animation: google.maps.Animation.DROP
+      }));
+    }, timeout);
+  }
+  function drop() {
+    for (var i = 0; i < locations.length; i++) {
+      var position = {lat: locations[i].s, lng: locations[i].e};
+      createMarkers(locations[i].name, i * 50,position);
     }
   }
 }
