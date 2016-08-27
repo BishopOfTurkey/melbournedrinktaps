@@ -40,7 +40,7 @@ function initMap() {
   },500);
   setTimeout(function () {
     finalContext();
-  }, 2000);
+  }, 4000);
 
   function createContextWindows (marker, infowindow, html) {
     google.maps.event.addListener(marker, 'click', function(){
@@ -52,7 +52,7 @@ function initMap() {
     for (var i = 0; i < locations.length; i++) {
       var contentString = '<div id="content">' +
       '<div id="siteNotice"></div>' + locations[i].name + '</h1>' +
-      '<p><b>' + locations[i].name + '</b></p><p>' + locations[i].discription + " " + locations[i].rating + '/10</p><img src="Images/Melbourne.jpg"/>' +
+      '<p><b>' + locations[i].name + '</b></p><p>' + locations[i].discription + " " + locations[i].rating + '/10</p><img src="' + locations[i].image +'"/>' +
       "</div></div>";
       var infowindow = new google.maps.InfoWindow({
       content: contentString
