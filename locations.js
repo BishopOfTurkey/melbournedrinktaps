@@ -275,7 +275,7 @@ var locations = [
     s: -37.808685,
     e: 144.962733,
     rating: 9.5,
-    image: "images/taps/abeckett.jpg"
+    image: "images/taps/abeckett.png"
   },
   {
     name: "Edinburgh Gardens, across from basketball court",

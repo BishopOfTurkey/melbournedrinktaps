@@ -31,16 +31,8 @@ function initMap() {
       }
     ]
   });
-
   var image = 'Images/icon.png';
   var markers = [];
-
-  setTimeout(function(){
-  	drop();
-  },500);
-  setTimeout(function () {
-    finalContext();
-  }, 4000);
 
   function createContextWindows (marker, infowindow, html) {
     google.maps.event.addListener(marker, 'click', function(){
@@ -77,4 +69,12 @@ function initMap() {
       createMarkers(locations[i].name, i * 50,position);
     }
   }
+  var timeToLoad = (locations.length * 50) + 100;
+  google.maps.event.addListenerOnce(map, 'tilesloaded', function(){
+      drop();
+      setTimeout(function () {
+        finalContext();
+      }, timeToLoad );
+	});
+
 }
