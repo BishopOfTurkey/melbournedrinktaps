@@ -6,7 +6,7 @@ for (var i = 0,x = locations.length;i < x ;i++) {
 };
 
 //b63b3b red
-//3b6bb6 blue
+//4764a7 blue
 var image = 'Images/icon.png';
 var markers = [];
 function initMap() {
@@ -17,10 +17,8 @@ function initMap() {
       {
         "featureType": "water",
         "stylers": [
-          { "hue": "#3b6bb6" },
-          { "saturation": 60 },
-          { "lightness": -20 },
-          { "gamma": 1.51 }
+          { "color": "#4764a7" },
+          { "weight": 1 },
         ]
       },{
         featureType: 'poi',
