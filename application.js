@@ -1,9 +1,9 @@
 Array.prototype.printData = function (arrayLocation) {
   console.log(this[arrayLocation].name + " is located at these coords:\n" + this[arrayLocation].s + " S\n" + this[arrayLocation].e + " E\nIt has a rating of " + this[arrayLocation].rating + "/10!")
 };
-//for (var i = 0,x = locations.length;i < x ;i++) {
-//    locations.printData(i);
-//};
+for (var i = 0,x = locations.length;i < x ;i++) {
+   locations.printData(i);
+};
 
 //b63b3b red
 //3b6bb6 blue
