@@ -1,5 +1,5 @@
 Array.prototype.printData = function (arrayLocation) {
-  console.log(this[arrayLocation].name + " is located at these coords:\n" + this[arrayLocation].s + " S\n" + this[arrayLocation].e + " E\nIt has a rating of " + this[arrayLocation].rating + "/10!\n" + "It is tap No. " + arrayLocation)
+  console.log(this[arrayLocation].name + " is located at these coords:\n" + this[arrayLocation].s + " S\n" + this[arrayLocation].e + " E\nIt has a rating of " + this[arrayLocation].rating + "/10!\n" + "It is tap No. " + arrayLocation);
 };
 for (var i = 0,x = locations.length;i < x ;i++) {
    locations.printData(i);
