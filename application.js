@@ -21,6 +21,12 @@ function initMap() {
           { "weight": 1 },
         ]
       },{
+        "featureType": "transit.line",
+        "elementType": "labels",
+        "stylers": [
+          { visibility: 'off' },
+        ]
+      },{
         featureType: 'poi',
         elementType: 'labels',
         stylers: [
