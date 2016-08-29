@@ -48,7 +48,7 @@ function initMap() {
     for (var i = 0; i < locations.length; i++) {
       var contentString = '<div id="content">' +
       '<div id="siteNotice"></div>' +
-      '<p><b>' + locations[i].name + '</b></p><p>' + locations[i].discription + " " + locations[i].rating + '/10</p><img src="' + locations[i].image +'" width="250px">' +
+      '<p><b>' + locations[i].name + '</b></p><p>' + locations[i].discription + " " + locations[i].rating + '/10</p><div class="tapImage" ><img src="' + locations[i].image +'" width="250px"></div>' +
       "</div></div>";
       var infowindow = new google.maps.InfoWindow({
       content: contentString
