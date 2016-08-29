@@ -6,3 +6,12 @@ html, body {
 #map {
   height: 100%;
 }
+#content {
+  width: 260px;
+  font-family: Georgia, sans-serif;
+}
+#content b {
+  width: 260px;
+  font-size: 30px;
+  font-family: sans-serif;
+}
