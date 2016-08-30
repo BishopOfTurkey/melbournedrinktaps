@@ -17,6 +17,7 @@ html, body {
 }
 #content p {
   margin: 0, auto;
+  width: 280px;
 }
 #tapImage {
   text-align: left;
