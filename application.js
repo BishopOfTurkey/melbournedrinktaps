@@ -35,7 +35,7 @@ function initMap() {
       }
     ]
   });
-  var image = 'Images/icon.png';
+  var image = 'images/icon.png';
   var markers = [];
 
   function createContextWindows (marker, infowindow, html) {
