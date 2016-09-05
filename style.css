@@ -6,19 +6,17 @@ html, body {
 #map {
   height: 100%;
 }
-#content {
+.content {
   width: 320px;
   font-family: Georgia, sans-serif;
   text-align: center;
+  margin-left: 10px;
+  margin-right: 30px;
 }
-#content b {
-  font-size: 30px;
-  font-family: sans-serif;
-}
-#content p {
-  margin: 0, auto;
-  width: 280px;
-}
-#tapImage {
-  text-align: left;
+.content h1 {
+  font-family: "Arial Black", "Gadget", sans-serif;
+  font-size: 20px;
+  border-bottom-style: groove;
+  border-bottom-color: DarkSlateBlue;
+  padding-bottom: 5px;
 }
