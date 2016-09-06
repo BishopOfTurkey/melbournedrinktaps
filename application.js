@@ -33,7 +33,9 @@ function initMap() {
           { visibility: 'off' }
         ]
       }
-    ]
+    ],
+    mapTypeControl: false,
+    streetViewControl: false
   });
   var image = 'images/icon.png';
   var markers = [];
@@ -42,6 +44,12 @@ function initMap() {
     google.maps.event.addListener(marker, 'click', function(){
       infowindow.setContent(html);
       infowindow.open(map, marker);
+      google.maps.event.addListenerOnce(map, 'click', function(){
+        infowindow.close();
+      });
+      google.maps.event.addListenerOnce(markers, 'click', function() {
+        infowindow.close();
+      })
     });
   }
   function finalContext () {
@@ -80,5 +88,4 @@ function initMap() {
         finalContext();
       }, timeToLoad );
 	});
-
 }
