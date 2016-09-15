@@ -20,39 +20,3 @@ html, body {
   border-bottom-color: DarkSlateBlue;
   padding-bottom: 5px;
 }
-.nav {
-  background-color: rgba(0, 0, 0, 0.7);
-  min-height: 45px;
-  font-size: 30px;
-  font-family: Arial, Helvetica, sans-serif;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-}
-.nav li {
-  display: inline;
-  margin-right: 15px;
-  border-left: 2px solid #000;
-  padding-left: 15px;
-  position: relative;
-  right: 5px;
-  bottom: 10px;
-}
-.nav li a {
-  color: rgb(82, 138, 199);
-  text-decoration: none;
-}
-.nav li a:active {
-  position: relative;
-  top: 2px;
-  color: #4179B5;
-}
-.nav ul {
-  position: relative;
-  right: 40px;
-  margin: 0px;
-}
-.nav li a:hover {
-  color: #1C7EE8;
-}
