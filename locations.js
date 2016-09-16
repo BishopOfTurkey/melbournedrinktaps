@@ -519,5 +519,101 @@ var locations = [
     e: 144.953084,
     rating: 7.5,
     image: "images/taps/royalparkaflovals.jpg"
+  },
+  {
+    name: "Phillips Reserve by BBQ",
+    discription: "Good taste good flow. Felt the tiniest bit warm so I took of a point. Drainable dog bowl is a nice touch",
+    s: -37.770093,
+    e: 144.983339,
+    rating: 9,
+    image: "images/taps/phillipsreserveplay.jpg"
+  },
+  {
+    name: "Phillips Reserve next to Vitoria Street",
+    discription: "Under the shade of a large peppercorn tree, for peaceful drinking. Very nice and cold. Good pressure but the taste was just a little off.",
+    s: -37.769435,
+    e: 144.983516,
+    rating: 9,
+    image: "images/taps/phillipsreserveroad.jpg"
+  },
+  {
+    name: "Merri Park",
+    discription: "Weird tap. Rusty generally nasty look with a broken lip guard. Very cold and has good pressure. which is good but the taste is fowl",
+    s: -37.772029,
+    e: 144.987857,
+    rating: 5,
+    image: "images/taps/merripark.jpg"
+  },
+  {
+    name: "Sumner Park",
+    discription: "Great pressure temperature and good taste. Nice location.",
+    s: -37.774230,
+    e: 144.985898,
+    rating: 9,
+    image: "images/taps/sumnerpark.jpg"
+  },
+  {
+    name: "Merri Creek trail, next to the esplanade",
+    discription: "Really really really great tap. Perfect location, after an extremely steep hill on the merri Creek trail, amazing pressure, strong but not too strong. Really nice and cold, and last of all an all round great taste.",
+    s: -37.785616,
+    e: 145.004606,
+    rating: 10,
+    image: "images/taps/merritrailesplande.jpg"
+  },
+  {
+    name: "Quarries Park",
+    discription: "Average tap, nothing special. Pressure was a bit too strong but it had good taste, good location and cold water.",
+    s: -37.790462,
+    e: 145.003664,
+    rating: 7,
+    image: "images/taps/quarriespark.jpg"
+  },
+  {
+    name: "Dights Falls Reserve",
+    discription: "Decent pressure, decent taste, decent flow and decent temperature. Decent tap.",
+    s: -37.796241,
+    e: 145.000619,
+    rating: 8,
+    image: "images/taps/dightsfalls.jpg"
+  },
+  {
+    name: "Collingwood Children's Farm",
+    discription: "TERRIBLE! Tastes really bad, sprays up in a thin sharp stream. Cold.",
+    s: -37.801778,
+    e: 145.005179,
+    rating: 2,
+    image: "images/taps/collingwoodchildfarm.jpg"
+  },
+  {
+    name: "Andrews Reserve Trail",
+    discription: "Good, strong pressure. Easily accessible by bikes which is always good on a bike path. The water was cold but unfortunetly there was an unpleasant mettalic, rusty after taste ",
+    s: -37.808853,
+    e: 145.010131,
+    rating: 8,
+    image: "images/taps/andrewsreservetrail.jpg"
+  },
+  {
+    name: "Richmond Park",
+    discription: "Acceptable Tap. Good taste and quite cold, however the flow slipped below the lip guard frequently",
+    s: -37.819528,
+    e: 145.014624,
+    rating: 7,
+    image: "images/taps/richmondpark.jpg"
+  },
+  {
+    name: "Yarra Boulevard",
+    discription: "Great taste, decent pressure and fairly cold. Good Location",
+    s: -37.833229,
+    e: 144.022781,
+    rating: 8,
+    image: "images/taps/yaarablv.jpg"
+  },
+  {
+    name:"Redgum Gulley"
+    discription: "Nothing special. Ok taste and pressure on both sides"
+    s: -37.818931,
+    e: 144.973026,
+    rating: 6.5,
+    image: "images/taps/redgumgulley.jpg"
   }
 ]
