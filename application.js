@@ -76,10 +76,10 @@ function initMap() {
   function drop() {
     for (var i = 0; i < locations.length; i++) {
       var position = {lat: locations[i].s, lng: locations[i].e};
-      createMarkers(locations[i].name, i * 0,position);
+      createMarkers(locations[i].name, i * 25,position);
     }
   }
-  var timeToLoad = (locations.length * 0) + 100;
+  var timeToLoad = (locations.length * 25) + 100;
   google.maps.event.addListenerOnce(map, 'tilesloaded', function(){
       drop();
       setTimeout(function () {

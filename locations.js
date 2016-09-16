@@ -609,8 +609,8 @@ var locations = [
     image: "images/taps/yaarablv.jpg"
   },
   {
-    name:"Redgum Gulley"
-    discription: "Nothing special. Ok taste and pressure on both sides"
+    name: "Redgum Gulley",
+    discription: "Nothing special. Ok taste and pressure on both sides",
     s: -37.818931,
     e: 144.973026,
     rating: 6.5,
