@@ -9,9 +9,9 @@
   <body>
     <div id="map"></div>
     <div class="drinkTapInfo">
-      <div class="button">
-        <input type="button" name="closeTap" value="" id="closeTap">
-      </div>
+        <div class="button">
+          <input type="button" name="closeTap" value="" id="closeTap">
+        </div>
       <img src="" alt="Tap!"/>
       <div class="drinkTapInfoText">
         <h1></h1>
@@ -19,10 +19,13 @@
         <p></p>
       </div>
     </div>
-    <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FMelbourneDrinkTaps%2F&width=100&layout=button_count&action=like&show_faces=true&share=true&height=46&appId" width="100" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+    <div class="fb-like" id="likeButton" data-href="https://www.facebook.com/MelbourneDrinkTaps/" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
     <script src="jquery.js"></script>
     <script src="locations.js"></script>
     <script src="application.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-zQp-g0jz1NEdwOOKk_iP001pkwQxr1Y&amp;callback=initMap"></script>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));
+    </script>
   </body>
 </html>

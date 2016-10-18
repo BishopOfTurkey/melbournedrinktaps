@@ -25,29 +25,31 @@ html, body {
 }
 .drinkTapInfoText {
   max-height: 60%;
-  width: 100%;
+  width: 90%;
   padding: 0 5%;
   background-color: white;
   position: absolute;
   bottom: 0;
   font-family: Georgia, sans-serif;
-  overflow: scroll;
+  overflow: auto;;
 }
 .drinkTapInfoText h1, h2 {
   font-family: "Arial Black", "Gadget", sans-serif;
   font-size: 20px;
   background-color: white;
 }
-#closeTap {
+.button {
   position: absolute;
+  right: 0;
+  top: 0;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+}
+#closeTap {
   background-image: url(images/close.png);
   background-repeat: no-repeat;
   background-position: center;
-  right: 1%;
-  top: 1%;
-}
-#closeTap {
-	background-color: rgba(43, 71, 119, 0.4);
+	background-color: rgba(43, 71, 119, 0.7);
   border-radius: 10px;
   width: 20px;
   height: 20px;
@@ -58,19 +60,21 @@ html, body {
 	padding:6px 6px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #283966;
+  margin: 4px;
 }
 #closeTap:hover {
-	background-color:rgba(43, 71, 119, 0.6);;
+	background-color:rgba(43, 71, 119, 0.9);;
 }
 #closeTap:active {
-  position: absolute;
-	top: 10px;
+  position: relative;;
+	top: 1px;
 }
 #closeTap:focus {
   outline:0;
 }
-iframe {
-  position: fixed;
-  bottom: -3%;
-  left: 80px;
+#likeButton {
+    display: inline-block;
+    position: fixed;
+    bottom: 3px;
+    left: 73px;
 }

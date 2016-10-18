@@ -1,9 +1,10 @@
 //b63b3b red
 //4764a7 blue
-var image = 'Images/icon.png';
+var image = 'images/icon.png';
+var selectedImage = 'images/iconSelected.png'
 var markers = [];
 var map;
-var mapClick,openMarker,clickedMarker;
+var mapClick,openMarker;
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     zoom: 13,
@@ -17,7 +18,7 @@ function initMap() {
         ]
       },{
         "featureType": "transit.line",
-        "elementType": "labels",
+        "elementType": "all",
         "stylers": [
           { visibility: 'off' },
         ]
@@ -65,10 +66,16 @@ function initMap() {
 }
 function openTapInfo(title, description, rating, img, marker) {
   removeListeners();
+  if (openMarker) {
+    openMarker.setIcon(image);
+  }
   openMarker = marker;
+  marker.setIcon(selectedImage);
+  description = '<p>' + description.replace(/\n/g,'</p><p>') + '</p>';
   $('.drinkTapInfo').find('h1').text(title);
-  $('.drinkTapInfo').find('h2').text(rating);
-  $('.drinkTapInfo').find('p').text(description);
+  $('.drinkTapInfo').find('h2').text(rating + '/10');
+  $('.drinkTapInfo').find('p').html(description);
+  $('.drinkTapInfo').find('img').attr('src','none');
   $('.drinkTapInfo').find('img').attr('src',img);
   $('.drinkTapInfo').animate({
     opacity: "1",
@@ -87,6 +94,7 @@ function closeTapInfo() {
     opacity: "0",
     left: "-31%"
   });
+  openMarker.setIcon(image);
   openMarker = null;
 }
 function removeListeners() {
