@@ -604,7 +604,7 @@ var locations = [
     name: "Yarra Boulevard",
     description: "Great taste, decent pressure and fairly cold. Good Location",
     s: -37.833229,
-    e: 144.022781,
+    e: 145.022781,
     rating: 8,
     image: "images/taps/yaarablv.jpg"
   },

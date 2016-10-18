@@ -67,15 +67,15 @@ function initMap() {
 function openTapInfo(title, description, rating, img, marker) {
   removeListeners();
   if (openMarker) {
-    openMarker.setIcon(image);
+    openMarker.setAnimation(null);
   }
   openMarker = marker;
-  marker.setIcon(selectedImage);
+  marker.setAnimation(google.maps.Animation.BOUNCE);
   description = '<p>' + description.replace(/\n/g,'</p><p>') + '</p>';
   $('.drinkTapInfo').find('h1').text(title);
   $('.drinkTapInfo').find('h2').text(rating + '/10');
   $('.drinkTapInfo').find('p').html(description);
-  $('.drinkTapInfo').find('img').attr('src','none');
+  $('.drinkTapInfo').find('img').attr('src','');
   $('.drinkTapInfo').find('img').attr('src',img);
   $('.drinkTapInfo').animate({
     opacity: "1",
@@ -94,7 +94,7 @@ function closeTapInfo() {
     opacity: "0",
     left: "-31%"
   });
-  openMarker.setIcon(image);
+  openMarker.setAnimation(null);
   openMarker = null;
 }
 function removeListeners() {
